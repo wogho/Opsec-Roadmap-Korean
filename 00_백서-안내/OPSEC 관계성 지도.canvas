@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    {"id":"b7e1912a4f510001","type":"file","file":"00_백서-안내/03_기준-위협-모델.md","x":0,"y":0,"width":400,"height":240,"color":"1"},
+    {"id":"b7e1912a4f510002","type":"file","file":"01_OPSEC-기초/03_위험평가와-통제선정.md","x":520,"y":0,"width":400,"height":240,"color":"1"},
+    {"id":"b7e1912a4f510003","type":"file","file":"02_신원과-접근/00_영역-개요.md","x":1040,"y":-360,"width":400,"height":240,"color":"4"},
+    {"id":"b7e1912a4f510004","type":"file","file":"03_기기와-플랫폼/00_영역-개요.md","x":1040,"y":-60,"width":400,"height":240,"color":"4"},
+    {"id":"b7e1912a4f510005","type":"file","file":"04_네트워크와-메타데이터/00_영역-개요.md","x":1040,"y":240,"width":400,"height":240,"color":"4"},
+    {"id":"b7e1912a4f510006","type":"file","file":"05_데이터와-암호화/00_영역-개요.md","x":1560,"y":-250,"width":400,"height":240,"color":"4"},
+    {"id":"b7e1912a4f510007","type":"file","file":"06_통신과-협업/00_영역-개요.md","x":1560,"y":150,"width":400,"height":240,"color":"4"},
+    {"id":"b7e1912a4f510008","type":"file","file":"07_운영과-대응/00_영역-개요.md","x":2080,"y":0,"width":400,"height":240,"color":"5"},
+    {"id":"b7e1912a4f510009","type":"file","file":"08_적용-프로파일/00_영역-개요.md","x":520,"y":-400,"width":400,"height":240,"color":"6"},
+    {"id":"b7e1912a4f51000a","type":"file","file":"09_부록/02_통제-카탈로그.md","x":1560,"y":-600,"width":400,"height":240,"color":"5"},
+    {"id":"b7e1912a4f51000b","type":"file","file":"09_부록/05_참고문헌.md","x":2600,"y":-180,"width":400,"height":240,"color":"5"},
+    {"id":"b7e1912a4f51000c","type":"file","file":"09_부록/07_품질-검증.md","x":2600,"y":180,"width":400,"height":240,"color":"5"},
+    {"id":"b7e1912a4f51000d","type":"file","file":"09_부록/08_OPSEC-지식그래프-허브.md","x":0,"y":-400,"width":400,"height":240,"color":"3"}
+  ],
+  "edges": [
+    {"id":"e7e1912a4f510001","fromNode":"b7e1912a4f510001","fromSide":"right","toNode":"b7e1912a4f510002","toSide":"left","label":"drives"},
+    {"id":"e7e1912a4f510002","fromNode":"b7e1912a4f510002","fromSide":"right","toNode":"b7e1912a4f510003","toSide":"left","label":"selects"},
+    {"id":"e7e1912a4f510003","fromNode":"b7e1912a4f510002","fromSide":"right","toNode":"b7e1912a4f510004","toSide":"left","label":"selects"},
+    {"id":"e7e1912a4f510004","fromNode":"b7e1912a4f510002","fromSide":"right","toNode":"b7e1912a4f510005","toSide":"left","label":"selects"},
+    {"id":"e7e1912a4f510005","fromNode":"b7e1912a4f510003","fromSide":"right","toNode":"b7e1912a4f510006","toSide":"left","label":"depends_on"},
+    {"id":"e7e1912a4f510006","fromNode":"b7e1912a4f510004","fromSide":"right","toNode":"b7e1912a4f510006","toSide":"left","label":"depends_on"},
+    {"id":"e7e1912a4f510007","fromNode":"b7e1912a4f510005","fromSide":"right","toNode":"b7e1912a4f510007","toSide":"left","label":"depends_on"},
+    {"id":"e7e1912a4f510008","fromNode":"b7e1912a4f510006","fromSide":"right","toNode":"b7e1912a4f510008","toSide":"left","label":"operationalized_by"},
+    {"id":"e7e1912a4f510009","fromNode":"b7e1912a4f510007","fromSide":"right","toNode":"b7e1912a4f510008","toSide":"left","label":"operationalized_by"},
+    {"id":"e7e1912a4f51000a","fromNode":"b7e1912a4f510004","fromSide":"right","toNode":"b7e1912a4f510008","toSide":"left","label":"operationalized_by"},
+    {"id":"e7e1912a4f51000b","fromNode":"b7e1912a4f510009","fromSide":"bottom","toNode":"b7e1912a4f510002","toSide":"top","label":"tailored_by"},
+    {"id":"e7e1912a4f51000c","fromNode":"b7e1912a4f51000a","fromSide":"bottom","toNode":"b7e1912a4f510003","toSide":"top","label":"maps"},
+    {"id":"e7e1912a4f51000d","fromNode":"b7e1912a4f51000a","fromSide":"bottom","toNode":"b7e1912a4f510004","toSide":"top","label":"maps"},
+    {"id":"e7e1912a4f51000e","fromNode":"b7e1912a4f51000a","fromSide":"bottom","toNode":"b7e1912a4f510005","toSide":"top","label":"maps"},
+    {"id":"e7e1912a4f51000f","fromNode":"b7e1912a4f510008","fromSide":"right","toNode":"b7e1912a4f51000b","toSide":"left","label":"verified_by"},
+    {"id":"e7e1912a4f510010","fromNode":"b7e1912a4f510008","fromSide":"right","toNode":"b7e1912a4f51000c","toSide":"left","label":"verified_by"},
+    {"id":"e7e1912a4f510011","fromNode":"b7e1912a4f51000c","fromSide":"bottom","toNode":"b7e1912a4f510001","toSide":"bottom","label":"updates"},
+    {"id":"e7e1912a4f510012","fromNode":"b7e1912a4f51000d","fromSide":"right","toNode":"b7e1912a4f510001","toSide":"top","label":"central"}
+  ]
+}

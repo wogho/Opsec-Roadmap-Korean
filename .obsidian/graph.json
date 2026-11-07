@@ -1,0 +1,93 @@
+{
+  "collapse-filter": false,
+  "search": "-path:templates -path:_workspace",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:00_백서-안내",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:01_OPSEC-기초",
+      "color": {
+        "a": 1,
+        "rgb": 16753920
+      }
+    },
+    {
+      "query": "path:02_신원과-접근",
+      "color": {
+        "a": 1,
+        "rgb": 52479
+      }
+    },
+    {
+      "query": "path:03_기기와-플랫폼",
+      "color": {
+        "a": 1,
+        "rgb": 7798903
+      }
+    },
+    {
+      "query": "path:04_네트워크와-메타데이터",
+      "color": {
+        "a": 1,
+        "rgb": 16738740
+      }
+    },
+    {
+      "query": "path:05_데이터와-암호화",
+      "color": {
+        "a": 1,
+        "rgb": 10040012
+      }
+    },
+    {
+      "query": "path:06_통신과-협업",
+      "color": {
+        "a": 1,
+        "rgb": 4251856
+      }
+    },
+    {
+      "query": "path:07_운영과-대응",
+      "color": {
+        "a": 1,
+        "rgb": 16763904
+      }
+    },
+    {
+      "query": "path:08_적용-프로파일",
+      "color": {
+        "a": 1,
+        "rgb": 5614318
+      }
+    },
+    {
+      "query": "path:09_부록",
+      "color": {
+        "a": 1,
+        "rgb": 8421504
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": 0.2,
+  "nodeSizeMultiplier": 1.1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.45,
+  "repelStrength": 11,
+  "linkStrength": 1,
+  "linkDistance": 230,
+  "scale": 0.85,
+  "close": true
+}
