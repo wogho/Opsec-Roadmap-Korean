@@ -24,13 +24,13 @@ tags: [opsec, dns, browser, wifi, bluetooth]
 
 공용 Wi-Fi는 “사용했다”는 이유만으로 모든 암호화 통신이 즉시 노출되는 것은 아니지만, 악성 포털·잘못된 인증서 경고·근거리 관찰 위험이 커진다. 중요한 관리 작업은 신뢰 가능한 단말과 검증된 암호화 연결에서 수행한다.
 
-## 1. 원문 항목과 현재 판단
+## 1. 공격자 관점의 무선 식별
 
-기존 문서는 Wi-Fi와 Bluetooth가 MAC 주소를 유출하고, 클라이언트가 알려진 SSID를 브로드캐스트하며, Qubes와 Android에서 MAC을 무작위화하고 OpenWrt로 AP의 BSSID를 바꾸라고 권했다. PrivacyPolice, Smarter WiFi Manager, Privacy Friendly WiFi Manager 같은 F-Droid 앱도 제시했다. 이 문제의식은 유지하지만 2022년의 동작을 모든 현대 장치에 적용하지 않는다.
+공격자는 Wi-Fi와 Bluetooth에서 보이는 MAC 주소, 알려진 SSID 탐색, 신호 세기, 접속 시간과 광고 페이로드를 결합해 장치의 재방문과 이동을 추정할 수 있다. Qubes와 Android의 MAC 무작위화, OpenWrt의 BSSID 변경과 PrivacyPolice 계열 도구는 일부 식별자를 바꾸지만 전체 활동 그래프를 제거하지 않는다.
 
 현대 운영체제는 능동·수동 스캔, 연결 전·연결 후, 네트워크별 사설 주소와 하드웨어 주소 사용 방식이 다르다. Bluetooth Low Energy도 주소 무작위화와 광고 페이로드가 별개다. MAC 하나를 바꾸면 익명해진다는 주장은 부정확하다. 네트워크 이름, 포털 계정, DHCP 옵션, 호스트명, 트래픽 시간, 무선 칩 특성, 위치 서비스와 앱 계정이 같은 장치를 다시 연결할 수 있다.
 
-원문의 세 F-Droid 앱은 역사 자료로 보존하되 최신 Android에서의 유지·권한·호환성을 검증하지 않은 채 설치 권고하지 않는다. 오래된 네트워크 관리 앱은 오히려 넓은 위치·Wi-Fi 권한과 업데이트 중단이라는 위험을 만들 수 있다.
+PrivacyPolice, Smarter WiFi Manager, Privacy Friendly WiFi Manager는 역사적 도구 사례다. 최신 Android에서의 유지·권한·호환성을 확인하지 않은 채 설치하지 않는다. 오래된 네트워크 관리 앱은 넓은 위치·Wi-Fi 권한과 업데이트 중단이라는 공격 표면을 추가할 수 있다.
 
 ## 2. 관찰자와 보호 목표
 
